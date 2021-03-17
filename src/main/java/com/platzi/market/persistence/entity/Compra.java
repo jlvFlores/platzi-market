@@ -8,7 +8,7 @@ import java.time.LocalDateTime;
 public class Compra {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_compra")
     private Integer idCompra;
 
