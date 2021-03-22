@@ -1,7 +1,5 @@
 package com.platzi.market.persistence.entity;
 
-import jdk.jfr.Category;
-
 import javax.persistence.*;
 
 @Entity
@@ -16,7 +14,7 @@ public class Producto {
     private String nombre;
 
     @Column(name = "id_categoria")
-    private Integer isCategoria;
+    private Integer idCategoria;
 
     @Column(name = "codigo_barras")
     private String codigoBarras;
@@ -49,12 +47,12 @@ public class Producto {
         this.nombre = nombre;
     }
 
-    public Integer getIsCategoria() {
-        return isCategoria;
+    public Integer getIdCategoria() {
+        return idCategoria;
     }
 
-    public void setIsCategoria(Integer isCategoria) {
-        this.isCategoria = isCategoria;
+    public void setIdCategoria(Integer idCategoria) {
+        this.idCategoria = idCategoria;
     }
 
     public String getCodigoBarras() {
@@ -87,5 +85,13 @@ public class Producto {
 
     public void setEstado(Boolean estado) {
         this.estado = estado;
+    }
+
+    public Categoria getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(Categoria categoria) {
+        this.categoria = categoria;
     }
 }
