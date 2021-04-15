@@ -12,6 +12,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/purchases")
 public class PurchaseController {
+
     @Autowired
     private PurchaseService purchaseService;
 
@@ -32,4 +33,3 @@ public class PurchaseController {
         return new ResponseEntity<>(purchaseService.save(purchase), HttpStatus.CREATED);
     }
 }
-

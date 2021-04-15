@@ -19,9 +19,9 @@ public interface PurchaseItemMapper {
 
     @InheritInverseConfiguration
     @Mappings({
-        @Mapping(source = "compra", target = "true"),
-        @Mapping(source = "producto", target = "true"),
-        @Mapping(source = "id.idCompra", target = "true")
+        @Mapping(target = "compra", ignore = true),
+        @Mapping(target = "producto", ignore = true),
+        @Mapping(target = "id.idCompra", ignore = true)
     })
     ComprasProducto toComprasProducto(PurchaseItem item);
 }

@@ -2,7 +2,7 @@ package com.platzi.market.domain;
 
 public class PurchaseItem {
     private int productId;
-    private int quality;
+    private int quantity;
     private double total;
     private boolean active;
 
@@ -14,12 +14,12 @@ public class PurchaseItem {
         this.productId = productId;
     }
 
-    public int getQuality() {
-        return quality;
+    public int getQuantity() {
+        return quantity;
     }
 
-    public void setQuality(int quality) {
-        this.quality = quality;
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
 
     public double getTotal() {
